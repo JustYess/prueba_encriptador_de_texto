@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebcriptador de texto</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Encriptador de texto</title>
 </head>
 <body>
     <header>
-
+        <img src="./assets/Logo.png" alt="Logo alura" class="logo">
     </header>
     <main>
-        
-    </main>
-    <footer>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <h2 class="titulo">Ningún mensaje fue encontrado</h2>
+            <p class="parrafo">Ingrese el texto que desea encriptar o desencriptar</p>
+            <div>
+                <button class="btn-copiar">Copiar</button>
+                <button class="btn-limpiar">Limpiar</button>
+            </div>
+        </section>
 
+    </main>
+<script src="script.js"></script>
+    <footer>
+        <p class="creador">Hecho por Yessica M para Alura LATAM - 2024</p>
     </footer>
 </body>
 </html>
